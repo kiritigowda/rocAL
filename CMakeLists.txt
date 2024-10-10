@@ -18,10 +18,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 cmake_minimum_required(VERSION 3.5)
-set(ROCAL_VERSION "2.1.0")
+set(VERSION "2.1.0")
 
 # Set Project Version and Language
-project(rocal VERSION ${ROCAL_VERSION} LANGUAGES CXX)
+project(rocal VERSION ${VERSION} LANGUAGES CXX)
 
 set(CMAKE_INSTALL_LIBDIR "lib" CACHE STRING "Library install directory")
 include(GNUInstallDirs)
@@ -68,7 +68,7 @@ if(ENHANCED_MESSAGE)
   set(Cyan        "${Esc}[36m")
   set(White       "${Esc}[37m")
 endif()
-message("-- ${BoldBlue}rocAL Version -- ${ROCAL_VERSION}${ColourReset}")
+message("-- ${BoldBlue}rocAL Version -- ${VERSION}${ColourReset}")
 message("-- ${BoldBlue}rocAL Install Path -- ${CMAKE_INSTALL_PREFIX}${ColourReset}")
 
 if(APPLE)
