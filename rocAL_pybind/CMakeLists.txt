@@ -19,10 +19,9 @@
 # THE SOFTWARE.
 
 cmake_minimum_required(VERSION 3.5)
-set(VERSION ${ROCAL_VERSION})
 
 # Set Project Version and Language
-project(rocal_pybind VERSION ${VERSION} LANGUAGES CXX)
+project(rocal_pybind VERSION ${ROCAL_VERSION} LANGUAGES CXX)
 
 set(TARGET_NAME rocal_pybind)
 

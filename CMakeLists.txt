@@ -18,11 +18,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 cmake_minimum_required(VERSION 3.5)
-Set(ROCAL_VERSION 2.1.0)
-set(VERSION ${ROCAL_VERSION})
+Set(ROCAL_VERSION "2.1.0")
 
 # Set Project Version and Language
-project(rocal VERSION ${VERSION} LANGUAGES CXX)
+project(rocal VERSION ${ROCAL_VERSION} LANGUAGES CXX)
 
 set(CMAKE_INSTALL_LIBDIR "lib" CACHE STRING "Library install directory")
 include(GNUInstallDirs)
