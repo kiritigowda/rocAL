@@ -18,5 +18,7 @@ def wheel_name(**kwargs):
     tag = '-'.join(bdist_wheel_cmd.get_tag())
     return f'{distname}-{tag}.whl'
 
-
-print(wheel_name(name='amd-rocal', version='2.0.0'), end='')
+# Version updates - TBD: Change in version number requires changes to match top level CMakeLists.txt ROCAL_VERSION
+## * getrocALWheelname.py
+## * setup.py
+print(wheel_name(name='amd-rocal', version='2.1.0'), end='')

@@ -37,11 +37,14 @@ class BinaryDistribution(Distribution):
     def has_ext_modules(self):
         return True
 
+# Version updates - TBD: Change in version number requires changes to match top level CMakeLists ROCAL_VERSION
+## * getrocALWheelname.py
+## * setup.py
 setup(
     name='amd-rocal',
     description='AMD ROCm Augmentation Library Python Bindings',
     url='https://github.com/ROCm/rocAL',
-    version='2.0.0',
+    version='2.1.0',
     author='AMD',
     license='MIT',
     packages=find_packages(where='@TARGET_NAME@'),
